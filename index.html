@@ -183,6 +183,10 @@
 
 <body>
 
+<audio id="musica" loop>
+	<source src="audio/loveU.mp3" type="audio/mpeg">
+</audio>
+
 <!-- PORTADA -->
 <section class="cover">
 	<div class="container">
@@ -195,6 +199,8 @@
 			pero hecho con todo mi coraz&oacute;n.
 		</p>
 		<a href="#historia" class="button">Abrir mi regalo</a>
+		<br>
+		<a class="button" onclick="toggleMusica()" id="botonMusica">&#x1F3B5; Leer con m&uacute;sica</a>
 	</div>
 </section>
 
@@ -478,6 +484,23 @@
 	const elements = document.querySelectorAll('.fade');
 	const observer = new IntersectionObserver(entries => {entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}});});
 	elements.forEach(el=>observer.observe(el));
+</script>
+
+<script>
+	const musica = document.getElementById("musica");
+	const boton = document.getElementById("botonMusica");
+	let reproduciendo = false;
+	function toggleMusica(){
+	   if(reproduciendo){
+		   musica.pause();
+		   boton.innerHTML = "&#x1F3B5; Leer con m&uacute;sica";
+		   reproduciendo = false;
+	   }else{
+		   musica.play();
+		   boton.innerHTML = "&#x1F507; Detener m&uacute;sica";
+		   reproduciendo = true;
+	   }
+	}
 </script>
 
 </body>
