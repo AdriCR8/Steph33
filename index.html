@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para Steph &#10084;&#65039;</title>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500&display=swap');
+
+	* {
+	box-sizing: border-box;
+	}
+
+	html {
+	scroll-behavior: smooth;
+	}
+
+	body {
+	margin: 0;
+	background: #080808;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	overflow-x: hidden;
+	}
+
+	h1, h2, h3 {
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 500;
+	}
+
+	section {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 25px;
+	position: relative;
+	}
+
+	.container {
+	max-width: 900px;
+	text-align: center;
+	}
+
+	.text {
+	font-size: 1.25rem;
+	line-height: 1.9;
+	font-weight: 300;
+	opacity: 0.9;
+	}
+
+	.big {
+	font-size: clamp(2.5rem, 7vw, 5rem);
+	line-height: 1.1;
+	}
+
+	.small {
+	font-size: 0.9rem;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	opacity: .6;
+	}
+
+	/* PORTADA */
+	.cover {
+	background:
+	linear-gradient(
+	rgba(0,0,0,.45),
+	rgba(0,0,0,.85)
+	),
+	url("FOTO_PORTADA.jpg");
+	background-size: cover;
+	background-position:center;
+	}
+
+	.cover h1 {
+	font-size: clamp(3rem, 10vw, 6rem);
+	margin-bottom:20px;
+	}
+
+	.button {
+	display:inline-block;
+	margin-top:40px;
+	padding:15px 35px;
+	border:1px solid rgba(255,255,255,.4);
+	border-radius:50px;
+	color:white;
+	text-decoration:none;
+	transition:.4s;
+	}
+
+	.button:hover {
+	background:white;
+	color:black;
+	}
+
+	/* EFECTO APARICIÓN */
+	.fade {
+	opacity:0;
+	transform:translateY(40px);
+	transition:1s ease;
+	}
+
+	.fade.visible {
+	opacity:1;
+	transform:none;
+	}
+
+	/* FOTOS */
+	.photo {
+	width:100%;
+	max-width:700px;
+	border-radius:20px;
+	margin:40px auto;
+	box-shadow:
+	0 20px 50px rgba(0,0,0,.5);
+	}
+
+	/* CORAZONES */
+	.heart {
+	position:absolute;
+	font-size:20px;
+	opacity:.15;
+	animation:float 8s infinite;
+	}
+
+	@keyframes float {
+	0% {
+	transform:translateY(100vh);
+	}
+	100% {
+	transform:translateY(-120vh);
+	}
+	}
+
+	/* FINAL */
+	.final {
+	background:black;
+	}
+
+	.signature {
+	font-family:'Cormorant Garamond',serif;
+	font-size:3rem;
+	}
+
+	@media(max-width:600px){
+	.text {
+	font-size:1.1rem;
+	}
+	}
+	
+	#mensaje-secreto {
+	display:none;
+	margin-top:50px;
+	animation: aparecer 1.5s ease forwards;
+	}
+
+	#mensaje-secreto.visible {
+	display:block;
+	}
+
+	@keyframes aparecer {
+	from {
+	opacity:0;
+	transform:translateY(30px);
+	}
+	to {
+	opacity:1;
+	transform:translateY(0);
+	}
+	}
+</style>
+
+</head>
+
+<body>
+
+<!-- PORTADA -->
+<section class="cover">
+	<div class="container">
+		<div class="small">Para mi persona favorita</div>
+		<h1>Hola, rubia &#10084;&#65039;</h1>
+		<p class="text">Tengo algo preparado para ti.
+			<br>
+			Algo peque&ntilde;o..
+			<br>
+			pero hecho con todo mi coraz&oacute;n.
+		</p>
+		<a href="#historia" class="button">Abrir mi regalo</a>
+	</div>
+</section>
+
+<!-- HISTORIA -->
+<section id="historia">
+	<div class="container fade">
+		<h2 class="big">Nuestra historia</h2>
+		<p class="text">Porque hay historias que empiezan sin que nadie se d&eacute; cuenta..</p>
+	</div>
+</section>
+
+<!-- GIMNASIO -->
+<section>
+	<div class="container fade">
+		<h2>Antes de nosotros</h2>
+		<img class="photo" src="fotos33S/DLL.jpg" alt="">
+		<p class="text">Coincidimos muchas veces en el mismo lugar.
+			<br><br>
+			El gimnasio.
+			<br><br>
+			Dos personas compartiendo espacio sin saber que,
+			alg&uacute;n d&iacute;a, ese sitio ser&iacute;a el comienzo de nuestra historia.
+		</p>
+	</div>
+</section>
+
+<!-- PRIMERA CITA -->
+<section>
+	<div class="container fade">
+		<h2>9 de junio de 2024 &#x1F35D;</h2>
+		<img class="photo" src="fotos33S/Tagliatella.jpg" alt="">
+		<p class="text">
+			Ese d&iacute;a tuvimos nuestra primera cita.
+			<br><br>
+			Sin saberlo, est&aacute;bamos abriendo una puerta que cambiar&iacute;a nuestras vidas.
+			<br><br>
+			Porque a veces las personas m&aacute;s importantes llegan sin avisar.
+		</p>
+	</div>
+</section>
+
+<!-- EMPEZAR A SALIR -->
+<section>
+	<div class="container fade">
+		<h2>31 de agosto de 2024 &#10084;&#65039;</h2>
+		<img class="photo" src="fotos33S/Espejo.jpg" alt="">
+		<p class="text">
+			Ese d&iacute;a dejamos de ser dos personas que se estaban conociendo.
+			<br><br>
+			Empezamos a construir algo juntos.
+		</p>
+	</div>
+</section>
+
+<!-- ROMA -->
+<section>
+	<div class="container fade">
+		<h2>Nuestro primer viaje &#x1f1ee;&#x1f1f9;</h2>
+		<img class="photo" src="fotos33S/Roma.jpg" alt="">
+		<p class="text">
+			Roma siempre tendr&aacute; un lugar especial.
+			<br><br>
+			Fue nuestro primer viaje juntos y recuerdo la ilusi&oacute;n de descubrir un lugar nuevo contigo.
+			<br><br>
+			Aunque ahora s&eacute; que lo importante nunca fue el destino.
+			Era estar contigo.
+		</p>
+	</div>
+</section>
+
+<!-- TONTERÍAS -->
+<section>
+	<div class="container fade">
+		<h2>Nuestra forma de re&iacute;rnos</h2>
+		<img class="photo" src="fotos33S/Canelos.jpg" alt="">
+		<p class="text">
+			Una de las cosas que m&aacute;s me gustan de nosotros es que no necesitamos grandes cosas para ser felices.
+			<br><br>
+			Nos basta con nuestras tonter&iacute;as.
+			<br><br>
+			Incluso cuando una puerta decide salir volando por los aires &#x1F602;
+		</p>
+	</div>
+</section>
+
+<!-- TAGLIATELLA -->
+<section>
+	<div class="container fade">
+		<h2>Nuestros peque&ntilde;os rituales</h2>
+		<p class="text">
+			Cada a&ntilde;o volvemos a La Tagliatella.
+			<br><br>
+			Porque fue all&iacute; donde empez&oacute; uno de esos recuerdos que solo nosotros sabemos valorar.
+			<br><br>
+			Me encanta que tengamos peque&ntilde;as tradiciones que hacen que nuestra historia sea nuestra.
+		</p>
+	</div>
+</section>
+
+<!-- PEDIDA -->
+<section>
+	<div class="container fade">
+		<h2>29 de agosto de 2025 &#x1F48D;</h2>
+		<img class="photo" src="fotos33S/Pedida.jpg" alt="">
+		<p class="text">
+			Ese d&iacute;a hice una de las preguntas m&aacute;s importantes de mi vida.
+			<br><br>
+			Y tu respuesta fue el comienzo del siguiente cap&iacute;tulo.
+			<br><br>
+			El cap&iacute;tulo que nos llevar&aacute; a casarnos el 18 de septiembre de 2026.
+		</p>
+	</div>
+</section>
+
+<!-- NOAH -->
+<section>
+	<div class="container fade">
+		<h2>Nuestra mayor aventura &#x1F476;&#x1F3FD;</h2>
+		<img class="photo" src="fotos33S/Noah.jpg" alt="">
+		<p class="text">
+			Y entonces llegaste t&uacute;, Noah.
+			<br><br>
+			Y contigo descubrimos un amor que no sab&iacute;amos que exist&iacute;a.
+			<br><br>
+			Verte convertirte en madre ha sido una de las cosas m&aacute;s bonitas que he vivido.
+			<br><br>
+			Tu paciencia, tu fortaleza y la forma en la que das todo por nosotros me recuerdan cada d&iacute;a la suerte que tengo.
+		</p>
+	</div>
+</section>
+
+<!-- STEPH -->
+<section>
+	<div class="container fade">
+		<h2>Lo que veo en ti</h2>
+		<img class="photo" src="fotos33S/Steph.jpg" alt="">
+		<p class="text">
+			Admiro tu fortaleza.
+			<br><br>
+			Admiro tu paciencia.
+			<br><br>
+			Admiro c&oacute;mo eres capaz de salir de tu zona de confort aunque a veces tengas miedo.
+			<br><br>
+			Me encanta la persona que eres y la forma en la que haces que mi vida sea mejor.
+		</p>
+	</div>
+</section>
+
+<!-- FRASE PRINCIPAL -->
+<section>
+	<div class="container fade">
+		<h1 class="big">" Llegaste sin poder imaginarme que te convertir&iacute;as en el centro de mi vida "</h1>
+	</div>
+</section>
+
+<!-- CARTA -->
+<section>
+	<div class="container fade">
+		<h2>Gracias, rubia &#10084;&#65039;</h2>
+		<p class="text">
+			Gracias por cada d&iacute;a a tu lado.
+			<br><br>
+			Gracias por hacerme sentir querido.
+			<br><br>
+			Gracias por iluminarme la cara y conseguir que incluso los d&iacute;as normales tengan algo especial.
+			<br><br>
+			Gracias por la familia que estamos construyendo.
+			<br><br>
+			Y gracias por elegirme.
+		</p>
+	</div>
+</section>
+
+<section>
+	<div class="container fade">
+		<p class="text">
+			Tambi&eacute;n quiero pedirte perd&oacute;n.
+			<br><br>
+			Por las veces que no he hecho las cosas todo lo bien que podr&iacute;a.
+			<br><br>
+			Por las veces que podr&iacute;a haber escuchado m&aacute;s o cuidado m&aacute;s los detalles.
+			<br><br>
+			Quiero seguir aprendiendo contigo y ser la persona que mereces tener a tu lado.
+		</p>
+	</div>
+</section>
+
+<!-- MIEDOS Y FUTURO -->
+<section>
+	<div class="container fade">
+		<p class="text">
+			A veces tengo miedo de decepcionarte.
+			<br><br>
+			Porque eres la persona cuya sonrisa m&aacute;s quiero cuidar.
+			<br><br>
+			Pero tambi&eacute;n tengo un sue&ntilde;o.
+			<br><br>
+			Que dentro de muchos a&ntilde;os sigamos mirando atr&aacute;s y pensemos:
+			<br><br>
+			"Qu&eacute; suerte tuvimos de encontrarnos"
+		</p>
+	</div>
+</section>
+
+<!-- CUMPLE -->
+<section>
+	<div class="container fade">
+		<h2 class="big">33 a&ntilde;os &#x1F382;</h2>
+		<p class="text">
+			¡¡¡La edad de Cristo!!! &#x1F602;
+			<br><br>
+			Eres la persona con la que quiero compartir todos los cumplea&ntilde;os que vengan.
+		</p>
+	</div>
+</section>
+
+<!-- BODA -->
+<section>
+	<div class="container fade">
+		<h2>Nuestro pr&oacute;ximo cap&iacute;tulo &#x1F48D;</h2>
+		<img class="photo" src="fotos33S/Nosotros.jpg" alt="">
+		<p class="text">
+			El 18 de septiembre de 2026 diremos delante de todos algo que nosotros ya sabemos:
+			<br><br>
+			Que queremos seguir caminando juntos.
+		</p>
+	</div>
+</section>
+
+<!-- COMPRA CASA -->
+<section>
+	<div class="container fade">
+		<h2>Y nuestra gran ilusi&oacute;</h2>
+		<img class="photo" src="fotos33S/Cuarte.jpg" alt="">
+		<p class="text">
+			Y en 2029, si todo va como esperamos, empezaremos a montar nuestro nido.
+			<br><br>
+			¡¡¡Ya podr&aacute;s usar la piedra!!!
+		</p>
+	</div>
+</section>
+
+<!-- FINAL -->
+<section class="final">
+	<div class="container fade">
+		<h1 class="big">No s&eacute; qu&eacute; nos traer&aacute; la vida..</h1>
+		<br><br>
+		<h1 class="big"> Pero s&eacute; con qui&eacute;n quiero vivirla.</h1>
+		<br><br>
+		<h2 class="signature">Ton Chaton &#10084;&#65039;</h2>
+		<a class="button" onclick="mensajeSecreto()">&#10084;&#65039; Una &uacute;ltima cosa..</a>
+		<div id="mensaje-secreto">
+			<p class="text">
+				Si has llegado hasta aqu&iacute;..
+				<br><br>
+				Gracias por recorrer conmigo nuestra historia.
+				<br><br>
+				No quiero una vida perfecta.
+				<br>
+				Quiero una vida contigo.
+				<br><br>
+				Quiero seguir ri&eacute;ndome contigo, construyendo recuerdos, viendo crecer a Noah y despertarme cada d&iacute;a sabiendo que tengo a mi lado a la persona que eleg&iacute;.
+				<br><br>
+				Te quiero, rubia.
+				<br><br>
+				Toujours &agrave; toi.
+			</p>
+		</div>
+	</div>
+</section>
+
+<script>
+	function mensajeSecreto(){
+		const mensaje = document.getElementById("mensaje-secreto");
+		mensaje.classList.add("visible");
+	}
+</script>
+
+<script>
+	const elements = document.querySelectorAll('.fade');
+	const observer = new IntersectionObserver(entries => {entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');}});});
+	elements.forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
